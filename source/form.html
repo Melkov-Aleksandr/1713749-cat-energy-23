@@ -25,13 +25,13 @@
         </button>
         <ul class="nav-items">
           <li class="nav-items__nav-item">
-            <a href="#" class="nav-items__nav-item-link">Главная</a>
+            <a href="index.html" class="nav-items__nav-item-link">Главная</a>
           </li>
           <li class="nav-items__nav-item">
-            <a href="#" class="nav-items__nav-item-link">Каталог продукции</a>
+            <a href="price.html" class="nav-items__nav-item-link">Каталог продукции</a>
           </li>
           <li class="nav-items__nav-item">
-            <a href="#" class="nav-items__nav-item-link">Подбор программы</a>
+            <a href="form.html" class="nav-items__nav-item-link">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -56,12 +56,12 @@
               </div>
               <div class="form-block__item">
                 <label for="cat-weight" class="form-block__label">Вес (кг):*</label>
-                <input class="form-block__input" type="text" name="cat-weight" id="cat-weight" placeholder="7"
+                <input class="form-block__input" type="number" name="cat-weight" id="cat-weight" placeholder="7"
                   required="">
               </div>
               <div class="form-block__item">
                 <label for="cat-age" class="form-block__label">Возраст (лет):</label>
-                <input class="form-block__input" type="text" name="cat-age" id="cat-age" placeholder="7" required="">
+                <input class="form-block__input" type="number" name="cat-age" id="cat-age" placeholder="7" required="">
               </div>
             </div>
           </div>
@@ -109,22 +109,22 @@
               <h2 class="form-block__optionally-information-title">Дополнительно</h2>
               <div class="form-block__optionally-information-item">
                 <div class="form-block__optionally-information-item-radio">
-                  <input type="radio" name="optionally" id="sweetener" class="form-block__input-radio" value="Похудение"
+                  <input type="checkbox" name="optionally" id="sweetener" class="form-block__input-radio" value="Похудение"
                     checked="checked">
                   <label for="sweetener" class="form-block__label-radio">Сахарозаменитель</label>
                 </div>
                 <div class="form-block__optionally-information-item__item-radio">
-                  <input type="radio" name="optionally" id="water" class="form-block__input-radio"
+                  <input type="checkbox" name="optionally" id="water" class="form-block__input-radio"
                     value="Набор массы">
-                  <label for="cwater" class="form-block__label-radio">Питьевая вода</label>
+                  <label for="water" class="form-block__label-radio">Питьевая вода</label>
                 </div>
                 <div class="form-block__optionally-information-item__item-radio">
-                  <input type="radio" name="optionally" id="milk" class="form-block__input-radio"
+                  <input type="checkbox" name="optionally" id="milk" class="form-block__input-radio"
                     value="Не знаю (Нужен ваш совет)">
                   <label for="milk" class="form-block__label-radio">Молоко</label>
                 </div>
                 <div class="form-block__optionally-information-item__item-radio">
-                  <input type="radio" name="optionally" id="vitamins" class="form-block__input-radio"
+                  <input type="checkbox" name="optionally" id="vitamins" class="form-block__input-radio"
                     value="Не знаю (Нужен ваш совет)">
                   <label for="vitamins" class="form-block__label-radio">Витамины</label>
                 </div>
