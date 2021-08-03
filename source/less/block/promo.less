@@ -1,10 +1,16 @@
 //
 .promo {
-  background-image: url("../img/index-background.jpeg"), linear-gradient(to top, @white 175px, transparent 175px);
+  @mobile-image-height: 302px;
+  @image-background-color: #63a73a;
+  background-image: url("../img/index-background.jpeg"),
+    linear-gradient(
+      to bottom,
+      @image-background-color (@mobile-image-height + 1px), // без одного пикселя картинка странно выпадает оптически
+      @white (@mobile-image-height + 1px)
+    );
   background-repeat: no-repeat;
-  background-position: center bottom, center bottom, 175px;
-  background-size: auto, 302px, auto;
-  background-color: @background-green-promo;
-
+  background-position: top center;
+  background-size: auto @mobile-image-height, cover;
+  background-color: @image-background-color;
   margin-bottom: 22px;
 }
