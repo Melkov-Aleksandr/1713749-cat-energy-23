@@ -1,0 +1,16 @@
+//
+.promo {
+  @mobile-image-height: 302px;
+  @image-background-color: #63a73a;
+  background-image: url("../img/index-background.jpeg"),
+    linear-gradient(
+      to bottom,
+      @image-background-color (@mobile-image-height + 1px), // без одного пикселя картинка странно выпадает оптически
+      @white (@mobile-image-height + 1px)
+    );
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto @mobile-image-height, cover;
+  background-color: @image-background-color;
+  margin-bottom: 22px;
+}

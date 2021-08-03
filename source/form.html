@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -19,33 +20,35 @@
             width="101" height="18">
         </a>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__button-menu">
-          <span class="main-nav__button-text visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="nav-items">
-          <li class="nav-items__nav-item">
-            <a href="index.html" class="nav-items__nav-item-link">Главная</a>
-          </li>
-          <li class="nav-items__nav-item">
-            <a href="price.html" class="nav-items__nav-item-link">Каталог продукции</a>
-          </li>
-          <li class="nav-items__nav-item">
-            <a href="form.html" class="nav-items__nav-item-link">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </div>
+    <nav class="main-nav">
+      <button class="main-nav__button-menu">
+        <span class="main-nav__button-text visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="nav-items">
+        <li class="nav-items__nav-item">
+          <a href="index.html" class="nav-items__nav-item-link">Главная</a>
+        </li>
+        <li class="nav-items__nav-item">
+          <a href="price.html" class="nav-items__nav-item-link">Каталог продукции</a>
+        </li>
+        <li class="nav-items__nav-item">
+          <a href="form.html" class="nav-items__nav-item-link">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page-main">
     <section class="form">
-      <div class="form-contatiner container">
-        <div class="form-heading">
-          <h1 class="form-heading__title">Подбор программы</h1>
+      <div class="form__contatiner container">
+        <div class="form__heading">
+          <h1 class="form__title title-sup">Подбор программы</h1>
         </div>
-        <form class="form-block" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="form-block-heading">
-            <p class="form-block-heading__title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
+      <form class="form-block" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="form__contatiner container">
+          <div class="form-block__heading">
+            <p class="form-block__heading-title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           </div>
           <div class="form-block__cat">
             <div class="form-block__cat-container">
@@ -65,27 +68,33 @@
               </div>
             </div>
           </div>
-          <div class="form-block__requirement">
+        </div>
+        <div class="form-block__requirement">
+          <div class="form-block__contatiner container">
             <div class="form-block__requirement-container">
               <div class="form-block__item-radio">
                 <input type="radio" id="cat-fit" name="program" class="form-block__input-radio" value="похудение"
                   checked="checked">
-                <label for="cat-fit" class="form-block__label-radio">Похудение</label>
+                <label for="cat-fit" class="form-block__label-radio form-block__label-radio--color">Похудение</label>
               </div>
               <div class="form-block__item-radio">
                 <input type="radio" id="cat-weight-radio" name="program" class="form-block__input-radio"
                   value="Набор массы">
-                <label for="cat-weight-radio" class="form-block__label-radio">Набор массы</label>
+                <label for="cat-weight-radio" class="form-block__label-radio form-block__label-radio--color">Набор
+                  массы</label>
               </div>
               <div class="form-block__item-radio">
                 <input type="radio" id="cat-help" name="program" class="form-block__input-radio"
                   value="Не знаю (Нужен ваш совет)">
-                <label for="cat-help" class="form-block__label-radio">Не знаю (Нужен ваш совет)</label>
+                <label for="cat-help" class="form-block__label-radio form-block__label-radio--color">Не знаю (Нужен ваш
+                  совет)</label>
               </div>
             </div>
           </div>
-          <div class="form-block__contacts">
-            <h2 class="form-block__title">Контактные данные (владельца кота)</h2>
+        </div>
+        <div class="form-block__contacts">
+          <div class="form-block__contatiner container">
+            <h2 class="form-block__title title-form">Контактные данные (владельца кота)</h2>
             <div class="form-block__contacts-information">
               <div class="form-block__contacts-information-item">
                 <label for="name" class="form-block__label">E-mail:*</label>
@@ -99,31 +108,32 @@
               </div>
             </div>
             <div class="form-block__more-information">
-              <h2 class="form-block__more-information-title">Комментарий</h2>
+              <h2 class="form-block__more-information-title title-form">Комментарий</h2>
               <div class="form-block__more-information-item">
-                <textarea class="form-block__input" name="comment" id="owner-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="form-block__input" name="comment" id="owner-comment"
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
                 <label for="owner-comment" class="form-block__label visually-hidden">Введите комментарий</label>
               </div>
             </div>
             <div class="form-block__optionally-information">
-              <h2 class="form-block__optionally-information-title">Дополнительно</h2>
+              <h2 class="form-block__optionally-information-title title-form">Дополнительно</h2>
               <div class="form-block__optionally-information-item">
                 <div class="form-block__optionally-information-item-radio">
-                  <input type="checkbox" name="optionally" id="sweetener" class="form-block__input-radio" value="Похудение"
-                    checked="checked">
+                  <input type="checkbox" name="optionally" id="sweetener" class="form-block__input-radio"
+                    value="Похудение" checked="checked">
                   <label for="sweetener" class="form-block__label-radio">Сахарозаменитель</label>
                 </div>
-                <div class="form-block__optionally-information-item__item-radio">
+                <div class="form-block__optionally-information-item-radio">
                   <input type="checkbox" name="optionally" id="water" class="form-block__input-radio"
                     value="Набор массы">
                   <label for="water" class="form-block__label-radio">Питьевая вода</label>
                 </div>
-                <div class="form-block__optionally-information-item__item-radio">
+                <div class="form-block__optionally-information-item-radio">
                   <input type="checkbox" name="optionally" id="milk" class="form-block__input-radio"
                     value="Не знаю (Нужен ваш совет)">
                   <label for="milk" class="form-block__label-radio">Молоко</label>
                 </div>
-                <div class="form-block__optionally-information-item__item-radio">
+                <div class="form-block__optionally-information-item-radio">
                   <input type="checkbox" name="optionally" id="vitamins" class="form-block__input-radio"
                     value="Не знаю (Нужен ваш совет)">
                   <label for="vitamins" class="form-block__label-radio">Витамины</label>
@@ -131,12 +141,14 @@
               </div>
             </div>
           </div>
-          <div class="form-block__button">
+        </div>
+        <div class="form-block__button">
+          <div class="form-block__contatiner container">
             <button class="button" type="submit">Отправить заявку</button>
-            <p class="text-sup">* — Обязательные поля</p>
+            <p class="form-block__text-sup">* — Обязательные поля</p>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="page-footer">
@@ -146,26 +158,28 @@
           <h2 class="page-footer__title">Приглашаем к сотрудничеству дилеров!</h2>
           <address class="page-footer__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-        <div class="page-footer__map">
-          <img class="page-footer__map-photo" src="img/map.png" alt="Наше местоположение" width="320" height="362">
-        </div>
+      </div>
+      <div class="page-footer__map">
+        <img class="page-footer__map-photo" src="img/map.png" alt="Наше местоположение">
+        <!-- width="320" height="362" -->
       </div>
     </section>
-    <div class="page-footer__container container">
-      <div class="page-footer__logo">
-        <img src="img/logo-footer-mobile.svg" alt="Надпись Cat Energy" width="128" height="24">
-      </div>
-      <div class="page-footer__social">
-        <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">Мы в Вконтакте</a>
-        <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">Мы в Инстаграме</a>
-        <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">Мы в Фейсбуке</a>
-      </div>
-      <div class="page-footer__copy-block">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copy-block-item">
-          <b class="page-footer__text">HTML Academy</b>
-          <!-- пока не прошел тренажеры по svg -->
-          <img class="page-footer__photo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
-        </a>
+    <div class="page-footer__footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__logo">
+          <img src="img/logo-footer-mobile.svg" alt="Надпись Cat Energy" width="128" height="24">
+        </div>
+        <div class="page-footer__social">
+          <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">Мы в Вконтакте</a>
+          <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">Мы в Инстаграме</a>
+          <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">Мы в Фейсбуке</a>
+        </div>
+        <div class="page-footer__copy-block">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copy-block-item">
+            <b class="page-footer__text-sup">HTML Academy</b>
+            <img class="page-footer__photo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
