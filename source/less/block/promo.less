@@ -13,4 +13,10 @@
   background-size: auto @mobile-image-height, cover;
   background-color: @image-background-color;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet) {
+    background-image: none;
+    margin-bottom: 0;
+    background-color: @white;
+  }
 }

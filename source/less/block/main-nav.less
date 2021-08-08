@@ -1,1 +1,22 @@
+.main-nav--open {
+  .margin-padding();
+  z-index: 1;
+  display: block;
+
+  @media (min-width: @tablet) {
+    margin-top: 10px;
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-nav--closed {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: flex;
+  }
+}
+
 //
