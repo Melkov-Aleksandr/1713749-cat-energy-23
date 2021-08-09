@@ -1,8 +1,25 @@
-//
 .promo-item__title-sub {
   color: @white;
   padding-top: 27px;
   padding-bottom: 25px;
+
+  @media (min-width: @tablet) {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    color: @black;
+    width: 60%;
+    margin-left: 12%;
+    padding-bottom: 41px;
+    text-align: left;
+  }
+
+  @media (min-width: @desctop) {
+    width: 34%;
+    margin-left: 7.5%;
+    padding-top: 114px;
+  }
 }
 
 .promo-item__title-sup {
@@ -16,10 +33,79 @@
   color: @white;
   .margin-padding();
   padding-bottom: 29px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: @black;
+    margin-left: 12%;
+  }
+
+  @media (min-width: @desctop) {
+    margin-left: 7.5%;
+  }
 }
 
 .promo-item__picture {
   text-align: center;
+
+  @media (min-width: @tablet) {
+    display: none;
+    width: auto;
+  }
 }
 
+.promo-item__link {
+  @media (min-width: @tablet) {
+    background-image: url("../img/index-can-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: auto;
+    height: 609px;
+  }
+
+  @media (min-width: @desctop) {
+    background-image: none;
+    margin-bottom: 281px;
+    height: auto;
+  }
+}
+
+.promo-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-item__link-item {
+  @media (min-width: @tablet) {
+    margin-top: 29px;
+    margin-left: 12%;
+    width: 34%;
+    height: 54px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 14px 0;
+  }
+
+  @media (min-width: @desctop) {
+    margin-left: 7.5%;
+  }
+}
+
+.promo-item__heading {
+  width: auto;
+}
+
+.promo-item__container {
+  @media (min-width: @desctop) {
+    background-image: url("../img/index-can-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    background-size: 45% auto;
+  }
+}
 //

@@ -1,8 +1,29 @@
 .page-header {
   background-color: @white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desctop) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .page-header__header-top {
   .margin-block();
+  box-sizing: border-box;
+
+  @media (min-width: @tablet) {
+    .margin-padding();
+  }
 }
 //
