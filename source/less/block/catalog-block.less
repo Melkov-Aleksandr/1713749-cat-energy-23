@@ -1,3 +1,9 @@
+.catalog-block {
+  @media (min-width: @desctop) {
+    margin-bottom: 86px;
+  }
+}
+
 .catalog-block__title {
   font-size: 24px;
   font-style: normal;
@@ -7,5 +13,32 @@
 
   padding-top: 25px;
   padding-bottom: 36px;
+
+  @media (min-width: @tablet) {
+    font-size: 36px;
+    line-height: 36px;
+
+    padding-top: 68px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: @desctop) {
+    padding-top: 75px;
+    padding-bottom: 81px;
+  }
+}
+
+.catalog-block__container {
+  @media (min-width: @desctop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.catalog-block__heading-block {
+  @media (min-width: @desctop) {
+    width: 100%;
+  }
 }
 //

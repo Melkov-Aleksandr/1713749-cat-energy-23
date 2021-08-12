@@ -17,6 +17,24 @@
   &--secondary {
     color: @black-4;
     background-color: @background-cart;
+
+    @media (min-width: @tablet) {
+      width: 248px;
+    }
+
+    @media (min-width: @desctop) {
+      width: 180px;
+    }
+  }
+}
+
+.button--width {
+  @media (min-width: @tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: @desctop) {
+    width: 244px;
   }
 }
 

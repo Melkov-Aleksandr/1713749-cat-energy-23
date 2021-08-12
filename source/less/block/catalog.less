@@ -2,5 +2,23 @@
   color: @black;
   margin-top: 27px;
   margin-bottom: 41px;
+
+  @media (min-width: @tablet) {
+    margin-top: 41px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: @desctop) {
+    margin-top: 50px;
+    margin-bottom: 85px;
+  }
+}
+
+.catalog__container {
+  display: contents;
+
+  @media (min-width: @tablet) {
+    display: block;
+  }
 }
 //
