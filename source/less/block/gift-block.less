@@ -6,9 +6,28 @@
   background-color: @background-green-promo;
   margin: 0 auto;
   width: 280px;
-  min-height: 289px;
+  height: 289px;
 
   margin-top: 36px;
+
+  @media (min-width: @tablet) {
+    background-image: url("../img/gift-background-tablet.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: @background-green-promo;
+    width: 708px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop) {
+    background-image: url("../img/gift-background-desctop.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: @background-green-promo;
+    width: 245px;
+    height: 289px;
+    margin: 0;
+  }
 }
 
 .gift-block__text {
@@ -23,5 +42,15 @@
 
   color: @white;
   margin: 58px 61px 43px 58px;
+
+  @media (min-width: @tablet) {
+    margin: 50px 124px 60px 78px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop) {
+    margin: 55px 43px 42px 41px;
+    width: 100%;
+  }
 }
 //

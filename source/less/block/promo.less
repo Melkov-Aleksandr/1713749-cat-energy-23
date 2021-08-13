@@ -1,22 +1,41 @@
-//
 .promo {
-  @mobile-image-height: 302px;
-  @image-background-color: #63a73a;
-  background-image: url("../img/index-background.jpeg"),
-    linear-gradient(
-      to bottom,
-      @image-background-color (@mobile-image-height + 1px), // без одного пикселя картинка странно выпадает оптически
-      @white (@mobile-image-height + 1px)
-    );
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto @mobile-image-height, cover;
-  background-color: @image-background-color;
-  margin-bottom: 22px;
+  @media (max-width: 767px) {
+    @mobile-image-height: 302px;
+    @image-background-color: #63a73a;
+    background-image: url("../img/index-background.jpeg"),
+      linear-gradient(
+        to bottom,
+        @image-background-color (@mobile-image-height + 1px), // без одного пикселя картинка странно выпадает оптически
+        @white (@mobile-image-height + 1px)
+      );
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto @mobile-image-height, cover;
+    background-color: @image-background-color;
+    margin-bottom: 22px;
+  }
 
   @media (min-width: @tablet) {
     background-image: none;
     margin-bottom: 0;
-    background-color: @white;
+    background-color: none;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 136px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 694px;
+    background: url("../img/background-promo-green.png") repeat-x top right, url("../img/index-background.jpg") no-repeat top right, linear-gradient(to right, #4e4d53 50%, #444348 100%) repeat-x top right;
   }
 }
