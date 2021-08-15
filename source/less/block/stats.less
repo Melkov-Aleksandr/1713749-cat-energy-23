@@ -1,5 +1,13 @@
 .stats {
   background-color: @background-stats;
+
+  @media (min-width: @tablet) {
+    background: linear-gradient(to top, @background-stats 52%, @white 48%);
+  }
+
+  @media (min-width: @desktop) {
+    background: linear-gradient(to top, @background-stats 77%, @white 23%);
+  }
 }
 
 .stats__stats {
@@ -17,6 +25,10 @@
 .stats__title {
   padding-top: 27px;
   margin-bottom: 33px;
+
+  @media (min-width: @desktop) {
+    margin-bottom: 146px;
+  }
 }
 
 .stats__stats-container {
@@ -79,6 +91,14 @@
   top: 45px;
   left: 20px;
   background-color: @background-stats;
+
+  @media (min-width: @tablet) {
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop) {
+    background-color: @background-stats;
+  }
 }
 
 .stats__stats-text-design {

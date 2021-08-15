@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="fav-icon.ico">
+  <link rel="icon" href="img/fav-32.svg" type="images/svg+xml">
+  <link rel="apple-touch-icon" href="img/fav-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,8 +17,11 @@
     <div class="page-header__header-top">
       <div class="logo-block">
         <a href="#" class="logo-block__logo-picture">
-          <img class="logo-block__logo-sign-pictute" src="img/logo-header-mobile.svg" alt="Cat Energy логотип"
-            width="33" height="38">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
+            <img class="logo-block__logo-sign-pictute" src="img/logo-header-mobile.svg" alt="Cat Energy логотип">
+          </picture>
         </a>
         <a class="logo-block__logo-text">
           <img class="logo-block__logo-sign-text" src="img/logo-header-mobile-2.svg" alt="Надпись Cat Energy"
@@ -46,8 +53,10 @@
           <h1 class="promo-item__title-sub title-sup">Функциональное питание для котов</h1>
           <p class="promo-item__title-sup">Занялся собой? Займись котом!</p>
           <div class="promo-item__picture">
-            <img class="promo-item__picture-item" src="img/photo-header-chicken.png" width="280" height="270"
-              alt="Баначка с едой для вашего питомца">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/promo-chicken.png, img/promo-chicken@2x.png 2x">
+              <img class="promo-item__picture-item" src="img/photo-header-chicken.png" srcset="img/photo-header-chicken@2x.png 2x" alt="Баначка с едой для вашего питомца">
+            </picture>
           </div>
           <div class="promo-item__link">
             <a href="#" class="promo-item__link-item button">Подобрать программу</a>
@@ -143,7 +152,12 @@
           </div>
         </div>
         <div class="slider">
-          <img class="slider__photo" src="img/slider-cat.png" alt="Пухлый кот" width="311" height="232">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/slider-cat-desktop.png, img/slider-cat-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/slider-cat-tablet.png, img/slider-cat-tablet@2x.png 2x">
+            <img class="slider__photo" src="img/slider-cat.png" srcset="img/slider-cat@2x.png 2x" alt="Пухлый кот">
+          </picture>
+          <img class="slider__photo visually-hidden" src="img/slider-cat2.png" srcset="img/slider-cat2@2x.png 2x" alt="Худой кот" width="251" height="240">
           <div class="slider__toggle">
             <p class="slider__text-before">Было</p>
             <div class="slider__design-slider">
@@ -166,8 +180,11 @@
         </div>
       </div>
       <div class="page-footer__map">
-        <img class="page-footer__map-photo" src="img/map.png" alt="Наше местоположение">
-        <!-- width="320" height="362" -->
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x">
+          <img class="page-footer__map-photo" src="img/map.png" srcset="img/map@2x.png 2x" alt="Наше местоположение">
+        </picture>
       </div>
     </section>
     <div class="page-footer__footer">

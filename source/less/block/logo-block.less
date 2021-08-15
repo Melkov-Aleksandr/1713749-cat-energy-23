@@ -5,6 +5,10 @@
 .logo-block__logo-text {
   text-decoration: none;
   text-align: center;
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
 }
 
 .logo-block {
@@ -13,11 +17,6 @@
   align-items: center;
   margin-top: 10px;
   margin-bottom: 17px;
-
-  @media (min-width: @tablet) {
-    width: 22.6%;
-    margin-right: 94px;
-  }
 }
 
 .logo-block__button-menu--closed {

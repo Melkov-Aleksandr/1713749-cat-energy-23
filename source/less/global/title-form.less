@@ -26,14 +26,6 @@
     margin: auto 0;
     background-color: @green;
     z-index: -1;
-
-    @media (min-width: @tablet) {
-      width: calc(100vw - 20px - 50px);
-    }
-
-    @media (min-width: @desktop) {
-      width: calc(100vw - 20px - 91px);
-    }
   }
 
   &::after {
@@ -42,6 +34,16 @@
     @media (min-width: @tablet) {
       display: block;
       right: 100%;
+    }
+  }
+
+  &::before {
+    @media (min-width: @tablet) {
+      width: calc(100vw - 20px - 91px);
+    }
+
+    @media (min-width: @desktop) {
+      width: calc(100vw - 20px - 91px);
     }
   }
 }

@@ -89,8 +89,13 @@
     background-image: url("../img/index-can-tablet.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-size: auto 609px;
     width: auto;
     height: 609px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop) {
