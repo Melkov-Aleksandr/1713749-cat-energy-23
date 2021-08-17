@@ -1,5 +1,14 @@
 .stats {
   background-color: @background-stats;
+
+  @media (min-width: @tablet) {
+    background: linear-gradient(to top, @background-stats 42.7%, @white 1%);
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: @desktop) {
+    background: linear-gradient(to top, @background-stats 72%, @white 1%);
+  }
 }
 
 .stats__stats {
@@ -17,21 +26,30 @@
 .stats__title {
   padding-top: 27px;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet) {
+    padding-top: 43px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 146px;
+  }
 }
 
 .stats__stats-container {
-  margin-bottom: 25px;
+  margin-bottom: 33px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: @tablet) {
-    width: 51%;
+    width: 366px;
     margin-bottom: 0;
   }
 
   @media (min-width: @desktop) {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 52px;
     justify-content: flex-start;
   }
 }
@@ -51,6 +69,13 @@
   @media (min-width: @tablet) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 52px;
+    width: 690px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 436px;
+    margin-bottom: 69px;
   }
 }
 
@@ -66,19 +91,41 @@
 
   color: @black;
   border: 1px solid @border-color-stats;
-  border-radius: 5%;
+  border-radius: 5px;
+
+  @media (min-width: @tablet) {
+    font-size: 30px;
+    line-height: 37px;
+
+    padding: 15px 57px 17px 57px;
+  }
 }
 
 .stats__stats-text--padding {
-  padding: 15px 21px 15px 21px;
+  padding: 15px 21px 18px 21px;
+
+  @media (min-width: @tablet) {
+    padding: 15px 30px 17px 30px;
+  }
 }
 
 .stats__stats-design {
   width: 82px;
   position: absolute;
-  top: 45px;
-  left: 20px;
+  top: 49px;
+  left: 21px;
   background-color: @background-stats;
+
+  @media (min-width: @tablet) {
+    width: 142px;
+    background-color: @white;
+    top: 64px;
+    left: 10px;
+  }
+
+  @media (min-width: @desktop) {
+    background-color: @background-stats;
+  }
 }
 
 .stats__stats-text-design {
@@ -91,6 +138,11 @@
   text-align: center;
 
   color: @black-4;
+
+  @media (min-width: @desktop) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .stats__cost {
@@ -130,12 +182,14 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 64px;
+    width: 708px;
   }
 
   @media (min-width: @desktop) {
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
+    width: auto;
   }
 }
 
@@ -144,6 +198,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: -15px;
   }
 }
 

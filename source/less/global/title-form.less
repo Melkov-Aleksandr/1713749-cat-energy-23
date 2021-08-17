@@ -17,23 +17,14 @@
 
   &::after,
   &::before {
-    position: absolute;
     content: "";
+    position: absolute;
     top: 0;
-    bottom: 0;
-    width: calc(100vw - 20px);
-    height: 2px;
-    margin: auto 0;
+    width: 100vw;
+    height: 3px;
+    margin-top: calc(1em / 2 + 3px);
     background-color: @green;
     z-index: -1;
-
-    @media (min-width: @tablet) {
-      width: calc(100vw - 20px - 50px);
-    }
-
-    @media (min-width: @desktop) {
-      width: calc(100vw - 20px - 91px);
-    }
   }
 
   &::after {

@@ -139,6 +139,12 @@
     padding-top: 7px;
     padding-bottom: 9px;
   }
+
+  &--style {
+    @media (min-width: @tablet) {
+      border: none;
+    }
+  }
 }
 
 .product-definition__text:last-child {
@@ -146,8 +152,7 @@
 
   @media (min-width: @tablet) {
     text-align: center;
-    border: none;
-    margin-bottom: 87px;
+    margin-bottom: 42px;
   }
 }
 
@@ -216,6 +221,7 @@
     height: 100%;
     margin-left: 0;
     margin-right: 0;
+    justify-content: flex-end;
   }
 
   @media (min-width: @desktop) {

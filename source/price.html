@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="fav-icon.ico">
+  <link rel="icon" href="img/fav-32.svg" type="images/svg+xml">
+  <link rel="apple-touch-icon" href="img/fav-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,14 +17,17 @@
     <div class="page-header__header-top">
       <div class="logo-block">
         <a href="#" class="logo-block__logo-picture">
-          <img class="logo-block__logo-sign-pictute" src="img/logo-header-mobile.svg" alt="Cat Energy логотип"
-            width="33" height="38">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo-block__logo-sign-pictute" src="img/logo-header-mobile.svg" alt="Cat Energy логотип">
+          </picture>
         </a>
         <a class="logo-block__logo-text">
           <img class="logo-block__logo-sign-text" src="img/logo-header-mobile-2.svg" alt="Надпись Cat Energy"
             width="101" height="18">
         </a>
-        <button type="button" class="logo-block__button-menu--closed toggle">
+        <button type="button" class="logo-block__button-menu logo-block__button-menu--closed toggle">
           <span class="logo-block__button-text visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -28,13 +35,13 @@
     <nav class="main-nav main-nav--closed">
       <ul class="nav-items">
         <li class="nav-items__nav-item">
-          <a href="index.html" class="nav-items__nav-item-link link-color">Главная</a>
+          <a href="index.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Главная</a>
         </li>
         <li class="nav-items__nav-item">
-          <a href="price.html" class="nav-items__nav-item-link link-color">Каталог продукции</a>
+          <a href="price.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Каталог продукции</a>
         </li>
         <li class="nav-items__nav-item">
-          <a href="form.html" class="nav-items__nav-item-link link-color">Подбор программы</a>
+          <a href="form.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -48,9 +55,13 @@
         <ul class="product-definition">
           <li class="product-definition__items">
             <div class="product-definition__container">
-              <div class="product-definition__item">
+              <div class="product-definition__item product-definition__item--style1">
                 <a href="" class="product-definition__item-photo">
-                  <img src="img/catalog-1.png" alt="корм Cat Energi со вкусом курицы" width="68" height="86">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-1-desktop.png, img/catalog-1-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog-1-tablet.png, img/catalog-1-tablet@2x.png 2x">
+                    <img src="img/catalog-1.png" srcset="img/catalog-1@2x.png 2x" alt="корм Cat Energi со вкусом курицы">
+                  </picture>
                 </a>
               </div>
               <div class="product-definition__ihformation-product">
@@ -67,9 +78,13 @@
           </li>
           <li class="product-definition__items">
             <div class="product-definition__container">
-              <div class="product-definition__item">
+              <div class="product-definition__item product-definition__item--style2">
                 <a href="#" class="product-definition__item-photo">
-                  <img src="img/catalog-2.png" alt="корм Cat Energi со вкусом курицы" width="84" height="101">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-2-desktop.png, img/catalog-2-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog-2-tablet.png, img/catalog-2-tablet@2x.png 2x">
+                    <img src="img/catalog-2.png" srcset="img/catalog-2@2x.png 2x" alt="корм Cat Energi со вкусом курицы">
+                  </picture>
                 </a>
               </div>
               <div class="product-definition__ihformation-product">
@@ -86,9 +101,13 @@
           </li>
           <li class="product-definition__items">
             <div class="product-definition__container">
-              <div class="product-definition__item">
+              <div class="product-definition__item  product-definition__item--style3">
                 <a href="#" class="product-definition__item-photo">
-                  <img src="img/catalog-3.png" alt="корм Cat Energi со вкусом курицы" width="68" height="78">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-3-desktop.png, img/catalog-3-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog-3-tablet.png, img/catalog-3-tablet@2x.png 2x">
+                    <img src="img/catalog-3.png" srcset="img/catalog-3@2x.png 2x" alt="корм Cat Energi со вкусом курицы">
+                  </picture>
                 </a>
               </div>
               <div class="product-definition__ihformation-product">
@@ -105,9 +124,13 @@
           </li>
           <li class="product-definition__items">
             <div class="product-definition__container">
-              <div class="product-definition__item">
+              <div class="product-definition__item product-definition__item--style4">
                 <a href="#" class="product-definition__item-photo">
-                  <img src="img/catalog-4.png" alt="корм Cat Energi со вкусом курицы" width="84" height="101">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-4-desktop.png, img/catalog-4-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog-4-tablet.png, img/catalog-4-tablet@2x.png 2x">
+                    <img src="img/catalog-4.png" srcset="img/catalog-4@2x.png 2x" alt="корм Cat Energi со вкусом курицы">
+                  </picture>
                 </a>
               </div>
               <div class="product-definition__ihformation-product">
@@ -124,9 +147,13 @@
           </li>
           <li class="product-definition__items">
             <div class="product-definition__container">
-              <div class="product-definition__item">
+              <div class="product-definition__item product-definition__item--style5">
                 <a href="#" class="product-definition__item-photo">
-                  <img src="img/catalog-5.png" alt="корм Cat Energi со вкусом курицы" width="68" height="78">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-5-desktop.png, img/catalog-5-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog-5-tablet.png, img/catalog-5-tablet@2x.png 2x">
+                    <img src="img/catalog-5.png" srcset="img/catalog-5@2x.png 2x" alt="корм Cat Energi со вкусом курицы">
+                  </picture>
                 </a>
               </div>
               <div class="product-definition__ihformation-product">
@@ -143,9 +170,13 @@
           </li>
           <li class="product-definition__items">
             <div class="product-definition__container">
-              <div class="product-definition__item">
+              <div class="product-definition__item product-definition__item--style6">
                 <a href="#" class="product-definition__item-photo">
-                  <img src="img/catalog-6.png" alt="корм Cat Energi со вкусом курицы" width="84" height="100">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-6-desktop.png, img/catalog-6-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog-6-tablet.png, img/catalog-6-tablet@2x.png 2x">
+                    <img src="img/catalog-6.png" srcset="img/catalog-6@2x.png 2x" alt="корм Cat Energi со вкусом курицы">
+                  </picture>
                 </a>
               </div>
               <div class="product-definition__ihformation-product">
@@ -162,9 +193,13 @@
           </li>
           <li class="product-definition__items">
             <div class="product-definition__container">
-              <div class="product-definition__item">
+              <div class="product-definition__item  product-definition__item--style7">
                 <a href="#" class="product-definition__item-photo">
-                  <img src="img/catalog-7.png" alt="корм Cat Energi со вкусом курицы" width="72" height="84">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog-7-desktop.png, img/catalog-7-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog-7-tablet.png, img/catalog-7-tablet@2x.png 2x">
+                    <img src="img/catalog-7.png" srcset="img/catalog-7@2x.png 2x" alt="корм Cat Energi со вкусом курицы">
+                  </picture>
                 </a>
               </div>
               <div class="product-definition__ihformation-product">
@@ -185,7 +220,7 @@
                 <a href="#" class="product-definition__title">Показать еще 100500 товаров</a>
               </div>
               <div class="product-definition__ihformation-product product-definition__ihformation-product--style">
-                <p class="product-definition__text">На самом деле вкусов гораздо больше!</p>
+                <p class="product-definition__text product-definition__text--style">На самом деле вкусов гораздо больше!</p>
               </div>
               <button class="button button--secondary" type="button">Показать все</button>
             </div>
@@ -248,15 +283,18 @@
   </main>
   <footer class="page-footer">
     <section class="page-footer__information-block">
-      <div class="page-footer__container container">
+      <div class="page-footer__container page-footer__container--style container">
         <div class="page-footer__information">
-          <h2 class="page-footer__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="page-footer__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
           <address class="page-footer__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
       </div>
       <div class="page-footer__map">
-        <img class="page-footer__map-photo" src="img/map.png" alt="Наше местоположение">
-        <!-- width="320" height="362" -->
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x">
+          <img class="page-footer__map-photo" src="img/map.png" srcset="img/map@2x.png 2x" alt="Наше местоположение">
+        </picture>
       </div>
     </section>
     <div class="page-footer__footer">
@@ -265,20 +303,31 @@
           <img src="img/logo-footer-mobile.svg" alt="Надпись Cat Energy" width="128" height="24">
         </div>
         <div class="page-footer__social">
-          <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">Мы в Вконтакте</a>
-          <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">Мы в Инстаграме</a>
-          <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">Мы в Фейсбуке</a>
+          <div class="page-footer__social-item page-footer__social-item--container">
+            <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">
+              <img class="page-footer__social-instagrem-photo" src="img/icon-vkontakte.svg" width="23" height="16"
+                alt="Мы в Вконтакте">
+            </a>
+            <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">
+              <img class="page-footer__social-instagrem-photo" src="img/icon-instagram.svg" width="16" height="16"
+                alt="Мы в Instagram">
+            </a>
+            <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">
+              <img class="page-footer__social-instagrem-photo" src="img/icon-facebook.svg" width="22" height="22"
+                alt="Мы в Facebook">
+            </a>
+          </div>
         </div>
         <div class="page-footer__copy-block">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copy-block-item">
             <b class="page-footer__text-sup">HTML Academy</b>
-            <img class="page-footer__photo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+            <img class="page-footer__photo" src="img/htmlacademy1.svg" alt="HTML Academy" width="27" height="34">
           </a>
         </div>
       </div>
     </div>
   </footer>
-  <script src="../js/main-nav.js"></script>
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>

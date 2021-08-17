@@ -24,6 +24,10 @@
 
 .catalog {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: @tablet) {
+    align-items: center;
+  }
 }
 //

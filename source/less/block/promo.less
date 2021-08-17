@@ -22,7 +22,7 @@
   }
 
   @media (min-width: @desktop) {
-    margin-bottom: 136px;
+    margin-bottom: 52px;
   }
 }
 
@@ -37,5 +37,10 @@
     width: 50%;
     height: 694px;
     background: url("../img/background-promo-green.png") repeat-x top right, url("../img/index-background.jpg") no-repeat top right, linear-gradient(to right, #4e4d53 50%, #444348 100%) repeat-x top right;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/background-promo-green@2x.png") repeat-x top right, url("../img/index-background@2x.jpg") no-repeat top right, linear-gradient(to right, #4e4d53 50%, #444348 100%) repeat-x top right;
+      background-size: 100% 694px;
+    }
   }
 }
