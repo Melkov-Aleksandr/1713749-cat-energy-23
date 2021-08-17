@@ -18,8 +18,8 @@
       <div class="logo-block">
         <a href="#" class="logo-block__logo-picture">
           <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
             <img class="logo-block__logo-sign-pictute" src="img/logo-header-mobile.svg" alt="Cat Energy логотип">
           </picture>
         </a>
@@ -27,7 +27,7 @@
           <img class="logo-block__logo-sign-text" src="img/logo-header-mobile-2.svg" alt="Надпись Cat Energy"
             width="101" height="18">
         </a>
-        <button type="button" class="logo-block__button-menu--closed toggle">
+        <button type="button" class="logo-block__button-menu logo-block__button-menu--closed toggle">
           <span class="logo-block__button-text visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -35,13 +35,13 @@
     <nav class="main-nav main-nav--closed">
       <ul class="nav-items">
         <li class="nav-items__nav-item">
-          <a href="index.html" class="nav-items__nav-item-link link-color">Главная</a>
+          <a href="index.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Главная</a>
         </li>
         <li class="nav-items__nav-item">
-          <a href="price.html" class="nav-items__nav-item-link link-color">Каталог продукции</a>
+          <a href="price.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Каталог продукции</a>
         </li>
         <li class="nav-items__nav-item">
-          <a href="form.html" class="nav-items__nav-item-link link-color">Подбор программы</a>
+          <a href="form.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -164,9 +164,9 @@
   </main>
   <footer class="page-footer">
     <section class="page-footer__information-block">
-      <div class="page-footer__container container">
+      <div class="page-footer__container page-footer__container--style container">
         <div class="page-footer__information">
-          <h2 class="page-footer__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="page-footer__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
           <address class="page-footer__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
       </div>
@@ -184,14 +184,25 @@
           <img src="img/logo-footer-mobile.svg" alt="Надпись Cat Energy" width="128" height="24">
         </div>
         <div class="page-footer__social">
-          <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">Мы в Вконтакте</a>
-          <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">Мы в Инстаграме</a>
-          <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">Мы в Фейсбуке</a>
+          <div class="page-footer__social-item page-footer__social-item--container">
+            <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">
+              <img class="page-footer__social-instagrem-photo" src="img/icon-vkontakte.svg" width="23" height="16"
+                alt="Мы в Вконтакте">
+            </a>
+            <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">
+              <img class="page-footer__social-instagrem-photo" src="img/icon-instagram.svg" width="16" height="16"
+                alt="Мы в Instagram">
+            </a>
+            <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">
+              <img class="page-footer__social-instagrem-photo" src="img/icon-facebook.svg" width="22" height="22"
+                alt="Мы в Facebook">
+            </a>
+          </div>
         </div>
         <div class="page-footer__copy-block">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copy-block-item">
             <b class="page-footer__text-sup">HTML Academy</b>
-            <img class="page-footer__photo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+            <img class="page-footer__photo" src="img/htmlacademy1.svg" alt="HTML Academy" width="27" height="34">
           </a>
         </div>
       </div>
