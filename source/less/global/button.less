@@ -13,6 +13,14 @@
   cursor: pointer;
   color: @white;
   background-color: @background-button;
+  border-radius: 0;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+  }
 
   &--secondary {
     color: @black-4;
@@ -38,4 +46,15 @@
   }
 }
 
+.button--form {
+  @media (min-width: @tablet) {
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 568px;
+  }
+}
 //
