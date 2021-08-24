@@ -51,7 +51,6 @@
 }
 
 .page-footer__information {
-  background-color: @white;
   padding-top: 28px;
   padding-bottom: 26px;
   display: flex;
@@ -70,6 +69,7 @@
     width: 570px;
     top: 95px;
     left: 0;
+    background-color: @white;
   }
 }
 
@@ -180,5 +180,13 @@
 .page-footer__social-instagram,
 .page-footer__social-vk {
   text-decoration: none;
+}
+
+.page-footer__information-block {
+  &--style {
+    @media (min-width: @tablet) {
+      background-color: @background-cart;
+    }
+  }
 }
 //

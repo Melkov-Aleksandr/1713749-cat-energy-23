@@ -58,6 +58,9 @@
               <div class="product-definition__item product-definition__item--style1">
                 <a href="" class="product-definition__item-photo">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-1-desktop.webp, img/catalog-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-1-tablet.webp, img/catalog-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog-1.webp, img/catalog-1@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="img/catalog-1-desktop.png, img/catalog-1-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog-1-tablet.png, img/catalog-1-tablet@2x.png 2x">
                     <img src="img/catalog-1.png" srcset="img/catalog-1@2x.png 2x" alt="корм Cat Energi со вкусом курицы">
@@ -81,6 +84,9 @@
               <div class="product-definition__item product-definition__item--style2">
                 <a href="#" class="product-definition__item-photo">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-2-desktop.webp, img/catalog-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-2-tablet.webp, img/catalog-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog-2.webp, img/catalog-2@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="img/catalog-2-desktop.png, img/catalog-2-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog-2-tablet.png, img/catalog-2-tablet@2x.png 2x">
                     <img src="img/catalog-2.png" srcset="img/catalog-2@2x.png 2x" alt="корм Cat Energi со вкусом курицы">
@@ -282,7 +288,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__information-block">
+    <section class="page-footer__information-block page-footer__information-block--style">
       <div class="page-footer__container page-footer__container--style container">
         <div class="page-footer__information">
           <h2 class="page-footer__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
@@ -305,16 +311,22 @@
         <div class="page-footer__social">
           <div class="page-footer__social-item page-footer__social-item--container">
             <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">
-              <img class="page-footer__social-instagrem-photo" src="img/icon-vkontakte.svg" width="23" height="16"
-                alt="Мы в Вконтакте">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-vkontakte-tablet.svg">
+                <img class="page-footer__social-instagrem-photo" src="img/icon-vkontakte.svg" alt="Мы в Вконтакте">
+              </picture>
             </a>
             <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">
-              <img class="page-footer__social-instagrem-photo" src="img/icon-instagram.svg" width="16" height="16"
-                alt="Мы в Instagram">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-instagram-tablet.svg">
+                <img class="page-footer__social-instagrem-photo" src="img/icon-instagram.svg" alt="Мы в Instagram">
+              </picture>
             </a>
             <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">
-              <img class="page-footer__social-instagrem-photo" src="img/icon-facebook.svg" width="22" height="22"
-                alt="Мы в Facebook">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-facebook-tablet.svg">
+                <img class="page-footer__social-instagrem-photo" src="img/icon-facebook.svg" alt="Мы в Facebook">
+              </picture>
             </a>
           </div>
         </div>
