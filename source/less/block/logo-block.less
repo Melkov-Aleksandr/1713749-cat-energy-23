@@ -42,6 +42,8 @@
   background-color: @white;
   position: relative;
   cursor: pointer;
+  margin-right: 12px;
+  margin-top: 7px;
 
   &::before,
   &::after {
@@ -61,6 +63,10 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  @media (min-width: @tablet) {
+    display: none;
   }
 }
 //

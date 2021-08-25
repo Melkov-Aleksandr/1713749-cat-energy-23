@@ -1,10 +1,16 @@
 .nav-items {
   .margin-padding();
   list-style: none;
+  position: absolute;
+  width: 100%;
+  background-color: @white;
 
   @media (min-width: @tablet) {
     display: flex;
     align-items: center;
+    width: auto;
+    position: relative;
+    background-color: transparent;
   }
 }
 

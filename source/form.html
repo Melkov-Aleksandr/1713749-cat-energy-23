@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Кэт энерджи</title>
-    <link rel="icon" href="fav-icon.ico">
-    <link rel="icon" href="img/fav-32.svg" type="images/svg+xml">
-    <link rel="apple-touch-icon" href="img/fav-180.png">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="fav-icon.ico">
+  <link rel="icon" href="img/fav-32.svg" type="images/svg+xml">
+  <link rel="apple-touch-icon" href="img/fav-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
   <header class="page-header">
@@ -108,14 +108,20 @@
             <h2 class="form-block__title title-form">Контактные данные (владельца кота)</h2>
             <div class="form-block__contacts-information">
               <div class="form-block__contacts-information-item">
-                <label for="name" class="form-block__label">E-mail:*</label>
+                <label for="name" class="form-block__label form-block__label--style">E-mail:*</label>
                 <input class="form-block__input" type="email" name="email" id="name" placeholder="kuklachev@gmail.com"
                   required="">
+                <svg class="form-block__input-icon" width="19" height="14">
+                  <use xlink:href="img/sprite.svg#icon-email"></use>
+                </svg>
               </div>
               <div class="form-block__contacts-information-item">
                 <label for="tel" class="form-block__label">Телефон:*</label>
                 <input class="form-block__input" type="tel" name="telephone" id="tel" placeholder="8 (960) 900-60-90"
                   required="">
+                <svg class="form-block__input-telephone" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-telephone"></use>
+                </svg>
               </div>
             </div>
             <div class="form-block__more-information">
@@ -155,7 +161,7 @@
         </div>
         <div class="form-block__button">
           <div class="form-block__contatiner form-block__contatiner--display  container container--form">
-            <button class="button" type="submit">Отправить заявку</button>
+            <button class="button button--form" type="submit">Отправить заявку</button>
             <p class="form-block__text-sup">* — Обязательные поля</p>
           </div>
         </div>
@@ -163,7 +169,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__information-block">
+    <section class="page-footer__information-block page-footer__information-block--style">
       <div class="page-footer__container page-footer__container--style container">
         <div class="page-footer__information">
           <h2 class="page-footer__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
@@ -186,16 +192,22 @@
         <div class="page-footer__social">
           <div class="page-footer__social-item page-footer__social-item--container">
             <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">
-              <img class="page-footer__social-instagrem-photo" src="img/icon-vkontakte.svg" width="23" height="16"
-                alt="Мы в Вконтакте">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-vkontakte-tablet.svg">
+                <img class="page-footer__social-instagrem-photo" src="img/icon-vkontakte.svg" alt="Мы в Вконтакте">
+              </picture>
             </a>
             <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">
-              <img class="page-footer__social-instagrem-photo" src="img/icon-instagram.svg" width="16" height="16"
-                alt="Мы в Instagram">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-instagram-tablet.svg">
+                <img class="page-footer__social-instagrem-photo" src="img/icon-instagram.svg" alt="Мы в Instagram">
+              </picture>
             </a>
             <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">
-              <img class="page-footer__social-instagrem-photo" src="img/icon-facebook.svg" width="22" height="22"
-                alt="Мы в Facebook">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-facebook-tablet.svg">
+                <img class="page-footer__social-instagrem-photo" src="img/icon-facebook.svg" alt="Мы в Facebook">
+              </picture>
             </a>
           </div>
         </div>

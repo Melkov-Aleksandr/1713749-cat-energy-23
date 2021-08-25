@@ -9,6 +9,7 @@
   height: 289px;
 
   margin-top: 36px;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet) {
     background-image: url("../img/gift-background-tablet.jpg");
@@ -17,6 +18,8 @@
     background-color: @background-green-promo;
     width: 708px;
     height: 200px;
+    margin-top: 68px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: @desktop) {
@@ -42,15 +45,44 @@
 
   color: @white;
   margin: 58px 61px 43px 58px;
+  padding-top: 129px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-gift.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 82px;
+    top: 1px;
+    left: 43px;
+    z-index: 3;
+  }
 
   @media (min-width: @tablet) {
-    margin: 50px 124px 60px 78px;
-    width: 100%;
+    margin: 72px 124px 60px 423px;
+    width: 161px;
+    text-align: left;
+    padding: 0;
+
+    &::before {
+      top: -15px;
+      left: -344px;
+    }
   }
 
   @media (min-width: @desktop) {
     margin: 55px 43px 42px 41px;
     width: 100%;
+    padding-top: 133px;
+    text-align: center;
+
+    &::before {
+      top: 1px;
+      left: 43px;
+    }
   }
 }
 //
