@@ -51,30 +51,26 @@
 .form-block__input-icon {
   position: absolute;
   z-index: 1;
-  left: 245px;
+  right: 16px;
   top: 18px;
 
   @media (min-width: @tablet) {
-    left: 594px;
-  }
-
-  @media (min-width: @desktop) {
-    left: 531px;
+    right: 17px;
   }
 }
 
 .form-block__input-telephone {
   position: absolute;
   z-index: 1;
-  left: 247px;
+  right: 13px;
   top: 14px;
 
   @media (min-width: @tablet) {
-    left: 594px;
+    right: 16px;
   }
 
   @media (min-width: @desktop) {
-    left: 543px;
+    right: 17px;
   }
 }
 
@@ -191,7 +187,7 @@
 .form-block__input-radio:checked + .form-block__label-radio::after {
   position: absolute;
   content: "";
-  top: 6.5px;
+  top: 6px;
   left: -36.5px;
   width: 13.5px;
   height: 13.5px;
@@ -202,6 +198,7 @@
     width: 18px;
     height: 18px;
     left: -49.5px;
+    top: 5px;
   }
 }
 
