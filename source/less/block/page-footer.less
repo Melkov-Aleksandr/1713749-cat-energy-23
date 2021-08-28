@@ -96,6 +96,14 @@
   @media (min-width: @tablet) {
     border: none;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
@@ -133,6 +141,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet) {
+    width: 163px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copy-block-item:hover .page-footer__photo {
+  fill: @green;
 }
 
 .page-footer__copy-block {
@@ -172,8 +192,11 @@
 }
 
 .page-footer__photo {
-  width: 27px;
-  height: 34px;
+  fill: @black-6;
+
+  &:hover {
+    fill: @green;
+  }
 }
 
 .page-footer__social-facebook,
@@ -187,6 +210,57 @@
     @media (min-width: @tablet) {
       background-color: @background-cart;
     }
+  }
+}
+
+.page-footer__social-vk-svg {
+  fill: @black-6;
+
+  @media (min-width: @tablet) {
+    width: 30px;
+    height: 22px;
+  }
+
+  &:hover {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social-instagram-svg {
+  fill: @black-6;
+
+  @media (min-width: @tablet) {
+    width: 23px;
+    height: 23px;
+  }
+
+  &:hover {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__soaicl-facebook-svg {
+  fill: @black-6;
+
+  @media (min-width: @tablet) {
+    width: 28px;
+    height: 33px;
+  }
+
+  &:hover {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 //

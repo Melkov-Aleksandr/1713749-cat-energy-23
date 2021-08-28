@@ -32,7 +32,7 @@
         </button>
       </div>
     </div>
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="nav-items">
         <li class="nav-items__nav-item">
           <a href="index.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Главная</a>
@@ -288,7 +288,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__information-block page-footer__information-block--style">
+    <section class="page-footer__information-block">
       <div class="page-footer__container page-footer__container--style container">
         <div class="page-footer__information">
           <h2 class="page-footer__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
@@ -297,6 +297,9 @@
       </div>
       <div class="page-footer__map">
         <picture>
+          <!-- <source media="(min-width: 1440px)" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+          <source media="(min-width: 320px)" srcset="img/map.webp, img/map@2x.webp 2x"> -->
           <source media="(min-width: 1440px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x">
           <img class="page-footer__map-photo" src="img/map.png" srcset="img/map@2x.png 2x" alt="Наше местоположение">
@@ -311,29 +314,28 @@
         <div class="page-footer__social">
           <div class="page-footer__social-item page-footer__social-item--container">
             <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/icon-vkontakte-tablet.svg">
-                <img class="page-footer__social-instagrem-photo" src="img/icon-vkontakte.svg" alt="Мы в Вконтакте">
-              </picture>
+              <svg class="page-footer__social-vk-svg" width="22" height="16">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
             </a>
             <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/icon-instagram-tablet.svg">
-                <img class="page-footer__social-instagrem-photo" src="img/icon-instagram.svg" alt="Мы в Instagram">
-              </picture>
+              <svg class="page-footer__social-instagram-svg" width="22" height="16">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
             </a>
             <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/icon-facebook-tablet.svg">
-                <img class="page-footer__social-instagrem-photo" src="img/icon-facebook.svg" alt="Мы в Facebook">
-              </picture>
+              <svg class="page-footer__soaicl-facebook-svg" width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
             </a>
           </div>
         </div>
         <div class="page-footer__copy-block">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copy-block-item">
             <b class="page-footer__text-sup">HTML Academy</b>
-            <img class="page-footer__photo" src="img/htmlacademy1.svg" alt="HTML Academy" width="27" height="34">
+            <svg class="page-footer__photo" width="40" height="40">
+              <use xlink:href="img/sprite.svg#icon-html"></use>
+            </svg>
           </a>
         </div>
       </div>
