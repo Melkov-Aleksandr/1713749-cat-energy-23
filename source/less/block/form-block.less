@@ -30,6 +30,14 @@
   padding: 16px 40px 11px 16px;
   border: 1px solid @input-border;
 
+  &:hover {
+    border: 1px solid @border-color-stats;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
@@ -46,6 +54,76 @@
       height: 174px;
     }
   }
+}
+
+.form-block__input:active,
+.form-block__input:focus,
+.form-block__input:placeholder-shown:active,
+.form-block__input:placeholder-shown:focus {
+  border: 2px solid @black-4;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding-left: 15px;
+}
+
+.form-block__input:invalid:not(:focus):not(:placeholder-shown),
+.form-block__input:placeholder-shown:invalid:not(:focus):not(:placeholder-shown) {
+  border: 2px solid @red;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding-left: 15px;
+}
+
+.form-block__input:focus ~ .form-block__input-icon {
+  fill: @green;
+}
+
+.form-block__input:invalid:not(:focus):not(:placeholder-shown) ~ .form-block__input-icon,
+.form-block__input:placeholder-shown:invalid:not(:focus):not(:placeholder-shown) ~ .form-block__input-icon {
+  fill: @red;
+}
+
+.form-block__input:focus ~ .form-block__input-telephone {
+  fill: @green;
+}
+
+.form-block__input:invalid:not(:focus):not(:placeholder-shown) ~ .form-block__input-telephone,
+.form-block__input:placeholder-shown:invalid:not(:focus):not(:placeholder-shown) ~ .form-block__input-telephone {
+  fill: @red;
+}
+
+.form-block__textarea {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  flex: 1;
+  width: 100%;
+  color: @black-4;
+  border: 1px solid @input-border;
+  height: 150px;
+  resize: none;
+  padding: 13px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 174px;
+  }
+}
+
+.form-block__textarea:hover {
+  border: 1px solid @border-color-stats;
+}
+
+.form-block__textarea:focus-visible {
+  outline: none;
+}
+
+.form-block__textarea:focus {
+  border: 2px solid @black-4;
+  padding: 12px;
 }
 
 .form-block__input-icon {
@@ -182,6 +260,14 @@
       left: -60px;
     }
   }
+
+  &:hover::before {
+    border: 1px solid @grey-chekbox;
+  }
+}
+
+.form-block__input-radio:disabled + .form-block__label-radio {
+  opacity: 0.3;
 }
 
 .form-block__input-radio:checked + .form-block__label-radio::after {
@@ -221,28 +307,40 @@
   @media (min-width: @desktop) {
     margin-left: 5px;
   }
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: -3px;
-    left: -45px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid @border-color-stats;
+.form-block__label-checkbox::before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @border-color-stats;
 
-    @media (min-width: @tablet) {
-      width: 40px;
-      height: 40px;
-      left: -59px;
-    }
-
-    @media (min-width: @desktop) {
-      width: 40px;
-      height: 40px;
-      left: -59px;
-    }
+  @media (min-width: @tablet) {
+    width: 40px;
+    height: 40px;
+    left: -59px;
   }
+
+  @media (min-width: @desktop) {
+    width: 40px;
+    height: 40px;
+    left: -59px;
+  }
+}
+
+.form-block__input-checkbox:checked ~ .form-block__label-checkbox:hover::before {
+  border: 1px solid @grey-chekbox;
+}
+
+.form-block__input-checkbox:not(:checked) ~ .form-block__label-checkbox:hover::before {
+  border: 1px solid @grey-chekbox;
+}
+
+.form-block__input-checkbox:disabled + .form-block__label-checkbox {
+  opacity: 0.3;
 }
 
 .form-block__input-checkbox:checked + .form-block__label-checkbox::after {

@@ -54,6 +54,8 @@
           <p class="promo-item__title-sup">Занялся собой? Займись котом!</p>
           <div class="promo-item__picture">
             <picture>
+              <!-- <source media="(min-width: 1440px)" srcset="img/promo-chicken.webp, img/promo-chicken@2x.webp 2x">
+              <source media="(min-width: 320px)" srcset="img/photo-header-chicken.webp, img/photo-header-chicken@2x.webp 2x"> -->
               <source media="(min-width: 1440px)" srcset="img/promo-chicken.png, img/promo-chicken@2x.png 2x">
               <img class="promo-item__picture-item" src="img/photo-header-chicken.png"
                 srcset="img/photo-header-chicken@2x.png 2x" alt="Баначка с едой для вашего питомца">
@@ -155,6 +157,9 @@
         </div>
         <div class="slider">
           <picture>
+            <!-- <source media="(min-width: 1440px)" srcset="img/slider-cat-desktop.webp, img/slider-cat-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/slider-cat-tablet.webp, img/slider-cat-tablet@2x.webp 2x">
+            <source media="(min-width: 320px)" srcset="img/slider-cat.webp, img/slider-cat@2x.webp 2x"> -->
             <source media="(min-width: 1440px)" srcset="img/slider-cat-desktop.png, img/slider-cat-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/slider-cat-tablet.png, img/slider-cat-tablet@2x.png 2x">
             <img class="slider__photo" src="img/slider-cat.png" srcset="img/slider-cat@2x.png 2x" alt="Пухлый кот">
@@ -184,6 +189,9 @@
       </div>
       <div class="page-footer__map">
         <picture>
+          <!-- <source media="(min-width: 1440px)" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+          <source media="(min-width: 320px)" srcset="img/map.webp, img/map@2x.webp 2x"> -->
           <source media="(min-width: 1440px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x">
           <img class="page-footer__map-photo" src="img/map.png" srcset="img/map@2x.png 2x" alt="Наше местоположение">
@@ -198,29 +206,28 @@
         <div class="page-footer__social">
           <div class="page-footer__social-item page-footer__social-item--container">
             <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/icon-vkontakte-tablet.svg">
-                <img class="page-footer__social-instagrem-photo" src="img/icon-vkontakte.svg" alt="Мы в Вконтакте">
-              </picture>
+              <svg class="page-footer__social-vk-svg" width="22" height="16">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
             </a>
             <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/icon-instagram-tablet.svg">
-                <img class="page-footer__social-instagrem-photo" src="img/icon-instagram.svg" alt="Мы в Instagram">
-              </picture>
+              <svg class="page-footer__social-instagram-svg" width="22" height="16">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
             </a>
             <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/icon-facebook-tablet.svg">
-                <img class="page-footer__social-instagrem-photo" src="img/icon-facebook.svg" alt="Мы в Facebook">
-              </picture>
+              <svg class="page-footer__soaicl-facebook-svg" width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
             </a>
           </div>
         </div>
         <div class="page-footer__copy-block">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copy-block-item">
             <b class="page-footer__text-sup">HTML Academy</b>
-            <img class="page-footer__photo" src="img/htmlacademy1.svg" alt="HTML Academy" width="27" height="34">
+            <svg class="page-footer__photo" width="40" height="40">
+              <use xlink:href="img/sprite.svg#icon-html"></use>
+            </svg>
           </a>
         </div>
       </div>

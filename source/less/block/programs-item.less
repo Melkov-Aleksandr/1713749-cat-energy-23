@@ -186,6 +186,7 @@
 }
 
 .programs-item__item-link {
+  position: relative;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -196,6 +197,27 @@
 
   color: @black;
 
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-arrow.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 12px;
+    top: 6px;
+    left: 108px;
+
+    @media (min-width: @tablet) {
+      top: 8px;
+      left: 133px;
+    }
+
+    @media (min-width: @desktop) {
+      left: 136px;
+    }
+  }
+
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
@@ -205,6 +227,14 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programs-item__item-link:hover::after {
+  background-image: url("../img/icon-arrow2.svg");
 }
 
 .programs-item__link-block {
