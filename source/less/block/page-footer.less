@@ -17,12 +17,14 @@
 
   @media (min-width: @tablet) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
     width: 170px;
   }
 
   @media (min-width: @desktop) {
     margin-left: 76px;
+    margin-top: 15px;
+    line-height: 26px;
   }
 }
 
@@ -46,20 +48,20 @@
 
   @media (min-width: @desktop) {
     margin-right: 89px;
-    width: 20%;
+    text-align: left;
   }
 }
 
 .page-footer__information {
-  padding-top: 28px;
-  padding-bottom: 26px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: @tablet) {
     padding-top: 66px;
-    padding-bottom: 71px;
+    padding-bottom: 58px;
     width: 625px;
   }
 
@@ -70,6 +72,8 @@
     top: 95px;
     left: 0;
     background-color: @white;
+    padding-top: 58px;
+    padding-bottom: 71px;
   }
 }
 
@@ -122,6 +126,7 @@
 
   @media (min-width: @tablet) {
     border: none;
+    margin-left: 27px;
   }
 }
 
@@ -156,7 +161,7 @@
 }
 
 .page-footer__copy-block {
-  padding-top: 22px;
+  padding-top: 19px;
   padding-bottom: 22px;
 }
 
@@ -206,6 +211,8 @@
 }
 
 .page-footer__information-block {
+  background-color: @background-cart;
+
   &--style {
     @media (min-width: @tablet) {
       background-color: @background-cart;
@@ -261,6 +268,43 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.page-footer__text-place {
+  display: none;
+  font-family: @arial-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+
+  color: @black-4;
+
+  @media (min-width: @tablet) {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    margin-top: 17px;
+  }
+
+  @media (min-width: @desktop) {
+    text-align: left;
+    margin-top: 19px;
+  }
+}
+
+.page-footer__text-decoration {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.page-footer__text-block {
+  @media (min-width: @desktop) {
+    margin-top: 16px;
   }
 }
 //

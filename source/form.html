@@ -9,7 +9,7 @@
   <link rel="icon" href="img/fav-32.svg" type="images/svg+xml">
   <link rel="apple-touch-icon" href="img/fav-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -65,7 +65,7 @@
                 <div class="form-block__item">
                   <label for="cat-name" class="form-block__label">Имя:*</label>
                   <input class="form-block__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик"
-                    pattern="^[А-Яа-яёЁ]+$" required="">
+                    pattern="^[А-Яа-яЁё\s\D]+$" required="">
                 </div>
                 <div class="form-block__item">
                   <label for="cat-weight" class="form-block__label">Вес (кг):*</label>
@@ -118,7 +118,7 @@
               <div class="form-block__contacts-information-item">
                 <label for="tel" class="form-block__label">Телефон:*</label>
                 <input class="form-block__input" type="tel" name="telephone" id="tel" placeholder="8 (960) 900-60-90"
-                  pattern="\+7\s?[\(]{1}[0-9]{3}[\)]{1}\s?\d{3}[-]{1}\d{2}[-]{1}\d{2}" required="">
+                  pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required="">
                 <svg class="form-block__input-telephone" width="20" height="20">
                   <use xlink:href="img/sprite.svg#icon-telephone"></use>
                 </svg>
@@ -173,14 +173,17 @@
       <div class="page-footer__container page-footer__container--style container">
         <div class="page-footer__information">
           <h2 class="page-footer__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
-          <address class="page-footer__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <div class="page-footer__text-block">
+            <address class="page-footer__text">ул. Большая Конюшенная, д. 19/8 <span class="page-footer__text-decoration">Санкт-Петербург</span></address>
+            <span class="page-footer__text-place">Санкт-Петербург</span>
+          </div>
         </div>
       </div>
       <div class="page-footer__map">
         <picture>
-          <!-- <source media="(min-width: 1440px)" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
-          <source media="(min-width: 320px)" srcset="img/map.webp, img/map@2x.webp 2x"> -->
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 320px)" srcset="img/map.webp, img/map@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x">
           <img class="page-footer__map-photo" src="img/map.png" srcset="img/map@2x.png 2x" alt="Наше местоположение">
@@ -222,7 +225,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/main-nav.js"></script>
+  <script src="js/main-nav.min.js"></script>
 </body>
 
 </html>
