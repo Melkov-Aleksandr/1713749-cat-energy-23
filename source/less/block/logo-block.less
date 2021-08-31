@@ -30,15 +30,34 @@
 }
 
 .logo-block__button-menu--closed {
-  content: "";
   width: 24px;
   height: 2px;
-  box-shadow: 0 8px 0 0 @black, 0 16px 0 0 @black;
   background-color: @black;
   border: none;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
   cursor: pointer;
   display: block;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: @black;
+    top: -7px;
+    left: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: @black;
+    top: 7px;
+    left: 0;
+  }
 
   @media (min-width: @tablet) {
     display: none;
