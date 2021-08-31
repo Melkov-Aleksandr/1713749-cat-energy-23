@@ -1,4 +1,8 @@
 .catalog-block {
+  @media (min-width: @tablet) {
+    overflow: hidden;
+  }
+
   @media (min-width: @desktop) {
     margin-bottom: 86px;
   }
@@ -12,19 +16,48 @@
   .margin-padding();
 
   padding-top: 25px;
-  padding-bottom: 36px;
+  padding-bottom: 33px;
 
   @media (min-width: @tablet) {
     font-size: 36px;
     line-height: 36px;
 
-    padding-top: 68px;
-    padding-bottom: 80px;
+    margin-top: 43px;
+    margin-bottom: 48px;
+    padding-left: 36px;
+    position: relative;
+    width: 410px;
+    background-color: @white;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      height: 3px;
+      margin-top: calc(2.5em / 2 + 1px);
+      background-color: @green;
+      z-index: -1;
+    }
+
+    &::after {
+      display: none;
+
+      @media (min-width: @tablet) {
+        display: block;
+        right: 100%;
+      }
+    }
   }
 
   @media (min-width: @desktop) {
-    padding-top: 75px;
-    padding-bottom: 81px;
+    margin-top: 51px;
+    margin-bottom: 80px;
+    padding-bottom: 0;
+    width: 413px;
+    margin-left: -40px;
+    padding-left: 39px;
   }
 }
 

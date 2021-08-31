@@ -13,6 +13,22 @@
   cursor: pointer;
   color: @white;
   background-color: @background-button;
+  border-radius: 0;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    background-color: @button-hover;
+  }
 
   &--secondary {
     color: @black-4;
@@ -24,6 +40,14 @@
 
     @media (min-width: @desktop) {
       width: 180px;
+    }
+
+    &:hover {
+      background-color: @border-catalog;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
@@ -38,4 +62,15 @@
   }
 }
 
+.button--form {
+  @media (min-width: @tablet) {
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 568px;
+  }
+}
 //

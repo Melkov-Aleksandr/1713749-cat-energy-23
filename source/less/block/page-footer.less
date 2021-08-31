@@ -1,3 +1,9 @@
+.page-footer {
+  @media (min-width: @tablet) {
+    height: 150px;
+  }
+}
+
 .page-footer__title {
   font-size: 16px;
   font-style: normal;
@@ -5,13 +11,14 @@
   line-height: 20px;
   .margin-padding();
   text-transform: uppercase;
+  width: 139px;
 
   color: @black-1;
 
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 21px;
-    width: 25%;
+    width: 170px;
   }
 
   @media (min-width: @desktop) {
@@ -25,14 +32,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  text-align: right;
+  text-align: left;
 
   color: @black-4;
+  width: 140px;
 
   @media (min-width: @tablet) {
     font-size: 16px;
     line-height: 20px;
-    width: 23%;
+    width: 159px;
+    text-align: right;
   }
 
   @media (min-width: @desktop) {
@@ -42,27 +51,43 @@
 }
 
 .page-footer__information {
-  background-color: @white;
   padding-top: 28px;
   padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  @media (min-width: @tablet) {
+    padding-top: 66px;
+    padding-bottom: 71px;
+    width: 625px;
+  }
+
   @media (min-width: @desktop) {
     position: absolute;
-    min-height: 201px;
-    width: 39.6%;
+    height: 201px;
+    width: 570px;
     top: 95px;
+    left: 0;
+    background-color: @white;
   }
 }
 
 .page-footer__footer {
   background-color: @background-cart;
+
+  @media (min-width: @tablet) {
+    padding-top: 23px;
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0;
+  }
 }
 
 .page-footer__logo {
-  padding-top: 39px;
+  padding-top: 35px;
   padding-bottom: 32px;
   border-bottom: 1px solid @border-cart;
   display: flex;
@@ -71,14 +96,29 @@
   @media (min-width: @tablet) {
     border: none;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
-  padding-top: 24px;
-  padding-bottom: 23px;
+  padding-top: 21px;
+  padding-bottom: 17px;
   border-bottom: 1px solid @border-cart;
   display: flex;
   justify-content: center;
+
+  &-item--container {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   @media (min-width: @tablet) {
     border: none;
@@ -101,6 +141,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet) {
+    width: 163px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copy-block-item:hover .page-footer__photo {
+  fill: @green;
 }
 
 .page-footer__copy-block {
@@ -110,18 +162,8 @@
 
 .page-footer__map {
   background-color: @background-cart;
-}
-
-.page-footer__map-photo {
-  @media (min-width: @tablet) {
-    height: 400px;
-    width: 100%;
-  }
-
-  @media (min-width: @desktop) {
-    height: 400px;
-    width: 100%;
-  }
+  display: flex;
+  justify-content: center;
 }
 
 .page-footer__container {
@@ -131,6 +173,94 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  &--style {
+    @media (min-width: @tablet) {
+      justify-content: center;
+    }
+
+    @media (min-width: @desktop) {
+      padding: 0;
+    }
+  }
+}
+
+.page-footer__photo {
+  fill: @black-6;
+
+  &:hover {
+    fill: @green;
+  }
+}
+
+.page-footer__social-facebook,
+.page-footer__social-instagram,
+.page-footer__social-vk {
+  text-decoration: none;
+}
+
+.page-footer__information-block {
+  &--style {
+    @media (min-width: @tablet) {
+      background-color: @background-cart;
+    }
+  }
+}
+
+.page-footer__social-vk-svg {
+  fill: @black-6;
+
+  @media (min-width: @tablet) {
+    width: 30px;
+    height: 22px;
+  }
+
+  &:hover {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social-instagram-svg {
+  fill: @black-6;
+
+  @media (min-width: @tablet) {
+    width: 23px;
+    height: 23px;
+  }
+
+  &:hover {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__soaicl-facebook-svg {
+  fill: @black-6;
+
+  @media (min-width: @tablet) {
+    width: 28px;
+    height: 33px;
+  }
+
+  &:hover {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 //

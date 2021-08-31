@@ -2,15 +2,17 @@
   color: @black;
   margin-top: 27px;
   margin-bottom: 41px;
+  text-align: center;
 
   @media (min-width: @tablet) {
-    margin-top: 41px;
-    margin-bottom: 90px;
+    margin-top: 34px;
+    margin-bottom: 81px;
+    text-align: left;
   }
 
   @media (min-width: @desktop) {
-    margin-top: 50px;
-    margin-bottom: 85px;
+    margin-top: 54px;
+    margin-bottom: 83px;
   }
 }
 
@@ -24,6 +26,10 @@
 
 .catalog {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: @tablet) {
+    align-items: center;
+  }
 }
 //

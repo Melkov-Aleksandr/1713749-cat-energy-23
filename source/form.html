@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="fav-icon.ico">
+  <link rel="icon" href="img/fav-32.svg" type="images/svg+xml">
+  <link rel="apple-touch-icon" href="img/fav-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,28 +17,31 @@
     <div class="page-header__header-top">
       <div class="logo-block">
         <a href="#" class="logo-block__logo-picture">
-          <img class="logo-block__logo-sign-pictute" src="img/logo-header-mobile.svg" alt="Cat Energy логотип"
-            width="33" height="38">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo-block__logo-sign-pictute" src="img/logo-header-mobile.svg" alt="Cat Energy логотип">
+          </picture>
         </a>
         <a class="logo-block__logo-text">
           <img class="logo-block__logo-sign-text" src="img/logo-header-mobile-2.svg" alt="Надпись Cat Energy"
             width="101" height="18">
         </a>
-        <button type="button" class="logo-block__button-menu--closed toggle">
+        <button type="button" class="logo-block__button-menu logo-block__button-menu--closed toggle">
           <span class="logo-block__button-text visually-hidden">Открыть меню</span>
         </button>
       </div>
     </div>
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="nav-items">
         <li class="nav-items__nav-item">
-          <a href="index.html" class="nav-items__nav-item-link link-color">Главная</a>
+          <a href="index.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Главная</a>
         </li>
         <li class="nav-items__nav-item">
-          <a href="price.html" class="nav-items__nav-item-link link-color">Каталог продукции</a>
+          <a href="price.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Каталог продукции</a>
         </li>
         <li class="nav-items__nav-item">
-          <a href="form.html" class="nav-items__nav-item-link link-color">Подбор программы</a>
+          <a href="form.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -58,7 +65,7 @@
                 <div class="form-block__item">
                   <label for="cat-name" class="form-block__label">Имя:*</label>
                   <input class="form-block__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик"
-                    required="">
+                    pattern="^[А-Яа-яёЁ]+$" required="">
                 </div>
                 <div class="form-block__item">
                   <label for="cat-weight" class="form-block__label">Вес (кг):*</label>
@@ -101,20 +108,26 @@
             <h2 class="form-block__title title-form">Контактные данные (владельца кота)</h2>
             <div class="form-block__contacts-information">
               <div class="form-block__contacts-information-item">
-                <label for="name" class="form-block__label">E-mail:*</label>
+                <label for="name" class="form-block__label form-block__label--style">E-mail:*</label>
                 <input class="form-block__input" type="email" name="email" id="name" placeholder="kuklachev@gmail.com"
                   required="">
+                <svg class="form-block__input-icon" width="19" height="14">
+                  <use xlink:href="img/sprite.svg#icon-email"></use>
+                </svg>
               </div>
               <div class="form-block__contacts-information-item">
                 <label for="tel" class="form-block__label">Телефон:*</label>
                 <input class="form-block__input" type="tel" name="telephone" id="tel" placeholder="8 (960) 900-60-90"
-                  required="">
+                  pattern="\+7\s?[\(]{1}[0-9]{3}[\)]{1}\s?\d{3}[-]{1}\d{2}[-]{1}\d{2}" required="">
+                <svg class="form-block__input-telephone" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-telephone"></use>
+                </svg>
               </div>
             </div>
             <div class="form-block__more-information">
               <h2 class="form-block__more-information-title title-form">Комментарий</h2>
               <div class="form-block__more-information-item">
-                <textarea class="form-block__input form-block__input--size" name="comment" id="owner-comment"
+                <textarea class="form-block__textarea" name="comment" id="owner-comment"
                   placeholder="Расскажите обо всех повадках кота"></textarea>
                 <label for="owner-comment" class="form-block__label visually-hidden">Введите комментарий</label>
               </div>
@@ -148,7 +161,7 @@
         </div>
         <div class="form-block__button">
           <div class="form-block__contatiner form-block__contatiner--display  container container--form">
-            <button class="button" type="submit">Отправить заявку</button>
+            <button class="button button--form" type="submit">Отправить заявку</button>
             <p class="form-block__text-sup">* — Обязательные поля</p>
           </div>
         </div>
@@ -157,15 +170,21 @@
   </main>
   <footer class="page-footer">
     <section class="page-footer__information-block">
-      <div class="page-footer__container container">
+      <div class="page-footer__container page-footer__container--style container">
         <div class="page-footer__information">
-          <h2 class="page-footer__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="page-footer__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
           <address class="page-footer__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
       </div>
       <div class="page-footer__map">
-        <img class="page-footer__map-photo" src="img/map.png" alt="Наше местоположение">
-        <!-- width="320" height="362" -->
+        <picture>
+          <!-- <source media="(min-width: 1440px)" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+          <source media="(min-width: 320px)" srcset="img/map.webp, img/map@2x.webp 2x"> -->
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x">
+          <img class="page-footer__map-photo" src="img/map.png" srcset="img/map@2x.png 2x" alt="Наше местоположение">
+        </picture>
       </div>
     </section>
     <div class="page-footer__footer">
@@ -174,20 +193,36 @@
           <img src="img/logo-footer-mobile.svg" alt="Надпись Cat Energy" width="128" height="24">
         </div>
         <div class="page-footer__social">
-          <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">Мы в Вконтакте</a>
-          <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">Мы в Инстаграме</a>
-          <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">Мы в Фейсбуке</a>
+          <div class="page-footer__social-item page-footer__social-item--container">
+            <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">
+              <svg class="page-footer__social-vk-svg" width="22" height="16">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-instagram">
+              <svg class="page-footer__social-instagram-svg" width="22" height="16">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-facebook">
+              <svg class="page-footer__soaicl-facebook-svg" width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="page-footer__copy-block">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copy-block-item">
             <b class="page-footer__text-sup">HTML Academy</b>
-            <img class="page-footer__photo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+            <svg class="page-footer__photo" width="40" height="40">
+              <use xlink:href="img/sprite.svg#icon-html"></use>
+            </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
-  <script src="../js/main-nav.js"></script>
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>
