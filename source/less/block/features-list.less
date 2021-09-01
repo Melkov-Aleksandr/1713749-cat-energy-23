@@ -87,6 +87,40 @@
       margin: 0;
     }
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: @green;
+    width: 60px;
+    min-height: 60px;
+    top: 0;
+    left: 0;
+
+    @media (min-width: @tablet) {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+  }
+
+  &--before-1::before {
+    background-image: url("../img/features-1.svg");
+  }
+
+  &--before-2::before {
+    background-image: url("../img/features-2.svg");
+  }
+
+  &--before-3::before {
+    background-image: url("../img/features-3.svg");
+  }
+
+  &--before-4::before {
+    background-image: url("../img/features-4.svg");
+  }
 }
 
 .features-list__text {
@@ -103,80 +137,3 @@
     line-height: 24px;
   }
 }
-
-.features-list__item--before-1::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/features-1.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-color: @green;
-  width: 60px;
-  height: 60px;
-  top: 0;
-  left: 0%;
-
-  @media (min-width: @tablet) {
-    width: 80px;
-    height: 80px;
-    top: 40px;
-  }
-}
-
-.features-list__item--before-2::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/features-2.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-color: @green;
-  width: 60px;
-  height: 60px;
-  top: 0;
-  left: 0%;
-
-  @media (min-width: @tablet) {
-    width: 80px;
-    height: 80px;
-    top: 40px;
-  }
-}
-
-.features-list__item--before-3::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/features-3.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-color: @green;
-  width: 60px;
-  height: 60px;
-  top: 0;
-  left: 0%;
-
-  @media (min-width: @tablet) {
-    width: 80px;
-    height: 80px;
-    top: 40px;
-  }
-}
-
-.features-list__item--before-4::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/features-4.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-color: @green;
-  width: 60px;
-  min-height: 60px;
-  top: 0;
-  left: 0%;
-
-  @media (min-width: @tablet) {
-    width: 80px;
-    height: 80px;
-    top: 40px;
-  }
-}
-//

@@ -1,6 +1,7 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.toggle');
 var button = document.querySelector('.logo-block__button-menu');
+var items = document.querySelector('.nav-items');
 
   navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--nojs');
@@ -14,6 +15,7 @@ var button = document.querySelector('.logo-block__button-menu');
   });
 
   button.addEventListener('click', function() {
+    items.classList.remove('nav-items--none');
     if (button.classList.contains('logo-block__button-menu--closed')) {
       button.classList.remove('logo-block__button-menu--closed');
       button.classList.add('logo-block__button-menu--open');

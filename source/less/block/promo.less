@@ -2,7 +2,7 @@
   @media (max-width: 767px) {
     @mobile-image-height: 302px;
     @image-background-color: #63a73a;
-    background-image: url("../img/index-background.jpeg"),
+    background-image: url("../img/index-background1.webp"),
       linear-gradient(
         to bottom,
         @image-background-color (@mobile-image-height + 1px), // без одного пикселя картинка странно выпадает оптически
@@ -40,7 +40,7 @@
 
     @media (min-resolution: 2dppx) {
       background: url("../img/background-promo-green@2x.webp") repeat-x top right, url("../img/index-background@2x.webp") no-repeat top right, linear-gradient(to right, #4e4d53 50%, #444348 100%) repeat-x top right;
-      background-size: 100% 694px;
+      background-size: auto 694px;
     }
   }
 }
