@@ -10,30 +10,31 @@
   <link rel="apple-touch-icon" href="img/fav-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__header-top">
       <div class="logo-block">
-        <a href="#" class="logo-block__logo-picture">
+        <a href="index.html" class="logo-block__logo-picture">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="logo-block__logo-sign-pictute" src="img/logo-header-mobile.svg" alt="Cat Energy логотип">
           </picture>
         </a>
-        <a class="logo-block__logo-text">
+        <a href="index.html" class="logo-block__logo-text">
           <img class="logo-block__logo-sign-text" src="img/logo-header-mobile-2.svg" alt="Надпись Cat Energy"
             width="101" height="18">
         </a>
-        <button type="button" class="logo-block__button-menu logo-block__button-menu--closed toggle">
+        <button type="button" class="logo-block__button-menu logo-block__button-menu--open toggle">
           <span class="logo-block__button-text visually-hidden">Открыть меню</span>
         </button>
       </div>
     </div>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <ul class="nav-items">
+    <nav class="main-nav main-nav--nojs">
+      <ul class="nav-items nav-items--none">
         <li class="nav-items__nav-item">
           <a href="index.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Главная</a>
         </li>
@@ -41,7 +42,7 @@
           <a href="price.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Каталог продукции</a>
         </li>
         <li class="nav-items__nav-item">
-          <a href="form.html" class="nav-items__nav-item-link nav-items__nav-item-link--color">Подбор программы</a>
+          <a class="nav-items__nav-item-link nav-items__nav-item-link--color">Подбор программы</a>
         </li>
       </ul>
     </nav>
