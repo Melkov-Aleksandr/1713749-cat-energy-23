@@ -167,8 +167,6 @@
 
 .page-footer__map {
   background-color: @background-cart;
-  display: flex;
-  justify-content: center;
 }
 
 .page-footer__container {
@@ -307,6 +305,16 @@
 .page-footer__text-block {
   @media (min-width: @desktop) {
     margin-top: 16px;
+  }
+}
+
+.page-footer__map-photo {
+  object-fit: cover;
+  height: 362px;
+  width: 100%;
+
+  @media (min-width: @tablet) {
+    height: 400px;
   }
 }
 //
