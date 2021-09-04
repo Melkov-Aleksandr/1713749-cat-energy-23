@@ -49,9 +49,35 @@
       opacity: 0.3;
     }
   }
+
+  &--width {
+    @media (min-width: @tablet) {
+      width: 100%;
+    }
+
+    @media (min-width: @desktop) {
+      width: 244px;
+      position: relative;
+      left: 5px;
+    }
+  }
+
+  &--form {
+    font-size: 16px;
+
+    @media (min-width: @tablet) {
+      width: 282px;
+      height: 52px;
+      font-size: 20px;
+    }
+
+    @media (min-width: @desktop) {
+      width: 568px;
+    }
+  }
 }
 
-.button--width {
+&--width {
   @media (min-width: @tablet) {
     width: 100%;
   }
@@ -63,7 +89,7 @@
   }
 }
 
-.button--form {
+&--form {
   @media (min-width: @tablet) {
     width: 282px;
     height: 52px;

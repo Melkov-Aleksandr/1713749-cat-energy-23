@@ -71,7 +71,7 @@
   cursor: pointer;
   margin-right: 12px;
   margin-top: 7px;
-  left: -6px;
+  width: 0;
 
   &::before,
   &::after {
@@ -82,6 +82,7 @@
     height: 2px;
     background-color: @black;
     cursor: pointer;
+    left: 0;
   }
 
   &::before {
@@ -96,5 +97,9 @@
   @media (min-width: @tablet) {
     display: none;
   }
+}
+
+.logo-block__none {
+  display: none;
 }
 //
