@@ -24,14 +24,35 @@
     .margin-padding();
     margin-right: 35px;
     border: none;
+    padding: 8px 0;
   }
 
-  &:last-child {
+  &--end {
     border-bottom: 1px solid @border;
 
     @media (min-width: @tablet) {
       border: none;
-      .margin-padding();
+      margin: 0;
+      padding: 8px 0;
+    }
+  }
+
+  &--active {
+    @media (min-width: @tablet) {
+      border-bottom: 2px solid @green;
+      padding: 9px 0 6px;
+    }
+
+    @media (min-width: @desktop) {
+      border-bottom: 2px solid @white;
+      padding: 9px 0 6px;
+    }
+  }
+
+  &--active-price {
+    @media (min-width: @tablet) {
+      border-bottom: 2px solid @green;
+      padding: 9px 0 6px;
     }
   }
 }
@@ -72,6 +93,14 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--active {
+    border-bottom: 2px solid @green;
+
+    @media (min-width: @tablet) {
+      border: none;
+    }
   }
 }
 

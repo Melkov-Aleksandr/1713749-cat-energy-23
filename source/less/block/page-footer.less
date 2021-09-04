@@ -74,6 +74,7 @@
     background-color: @white;
     padding-top: 58px;
     padding-bottom: 71px;
+    z-index: 10;
   }
 }
 
@@ -139,6 +140,10 @@
   text-align: left;
 
   color: @black-4;
+
+  @media (min-width: @tablet) {
+    padding-top: 10px;
+  }
 }
 
 .page-footer__copy-block-item {
@@ -167,6 +172,12 @@
 
 .page-footer__map {
   background-color: @background-cart;
+  height: 362px;
+  width: 100%;
+
+  @media (min-width: @tablet) {
+    height: 400px;
+  }
 }
 
 .page-footer__container {
@@ -198,6 +209,10 @@
   fill: @black-6;
   position: relative;
   left: 6px;
+
+  @media (min-width: @tablet) {
+    top: 6px;
+  }
 
   &:hover {
     fill: @green;
@@ -308,7 +323,7 @@
   }
 }
 
-.page-footer__map-photo {
+.page-footer__map-iframe {
   object-fit: cover;
   height: 362px;
   width: 100%;
