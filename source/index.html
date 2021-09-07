@@ -24,7 +24,7 @@
             <img class="logo-block__logo-sign-pictute" src="img/logo-header-mobile.svg" alt="Cat Energy логотип">
           </picture>
         </a>
-        <a class="logo-block__logo-text">
+        <a class="logo-block__logo-text logo-block__logo-text--position">
           <img class="logo-block__logo-sign-text" src="img/logo-header-mobile-2.svg" alt="Надпись Cat Energy"
             width="101" height="18">
         </a>
@@ -84,6 +84,9 @@
                 </div>
               </div>
               <div class="programs-item__picter-block programs-item__picter-block--background-first">
+                <svg class="programs-item__picter-block-item programs-item__picter-block-item--background-first" width="262" height="211">
+                  <use xlink:href="img/sprite.svg#slim-cat"></use>
+                </svg>
               </div>
             </div>
           </div>
@@ -99,7 +102,10 @@
                   <a href="#" class="programs-item__item-link programs-item__item-link--decoration">Каталог pro</a>
                 </div>
               </div>
-              <div class="programs-item__picter-block programs-item__picter-block--background">
+              <div class="programs-item__picter-block">
+                <svg class="programs-item__picter-block-item programs-item__picter-block-item--background" width="268" height="200">
+                  <use xlink:href="img/sprite.svg#weight-cat"></use>
+                </svg>
               </div>
             </div>
           </div>
@@ -169,13 +175,16 @@
           <img class="visually-hidden" src="img/slider-cat2.png" srcset="img/slider-cat2@2x.png 2x" alt="Худой кот"
             width="251" height="240">
           <div class="slider__toggle">
-            <p class="slider__text-before">Было</p>
+            <button class="slider__text-before" type="button">Было<span class="visually-hidden">Посмотреть изменения до</span>
+            </button>
             <div class="slider__design-slider">
               <button class="slider__design-scrole" type="button">
                 <span class="slider__toggle-design"></span>
+                <span class="visually-hidden">Ползунок для просотра изменений</span>
               </button>
             </div>
-            <p class="slider__text-after">Стало</p>
+            <button class="slider__text-after" type="button">Стало<span class="visually-hidden">Посмотреть изменения после</span>
+            </button>
           </div>
         </div>
       </div>
@@ -193,14 +202,24 @@
         </div>
       </div>
       <div class="page-footer__map">
-        <iframe class="page-footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6011960076423!2d30.32317614497176!3d59.93875947667303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630761291482!5m2!1sru!2sru" width="100" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="page-footer__map-iframe page-footer__map-iframe--disabled" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6011960076423!2d30.32317614497176!3d59.93875947667303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630761291482!5m2!1sru!2sru" width="100" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="page-footer__map-nojs page-footer__map-image">
+          <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 320px)" srcset="img/map.webp, img/map@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x">
+          <img class="page-footer__map-photo" src="img/map.png" srcset="img/map@2x.png 2x" alt="Наше местоположение">
+          </picture>
+        </div>
       </div>
     </section>
     <div class="page-footer__footer">
       <div class="page-footer__container container">
-        <div class="page-footer__logo">
+        <a class="page-footer__logo">
           <img src="img/logo-footer-mobile.svg" alt="Надпись Cat Energy" width="128" height="24">
-        </div>
+        </a>
         <div class="page-footer__social">
           <div class="page-footer__social-item page-footer__social-item--container">
             <a href="https://vk.com/htmlacademy" class="page-footer__social-vk">

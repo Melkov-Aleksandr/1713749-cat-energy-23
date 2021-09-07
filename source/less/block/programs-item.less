@@ -272,37 +272,24 @@
   @media (min-width: @tablet) {
     display: block;
   }
-}
-
-.programs-item__picter-block--background-first {
-  @media (min-width: @tablet) {
-    background-image: url("../img/slim-programs-cat.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 268px 211px;
-    width: 200px;
-    height: 211px;
-    margin-top: 3px;
-  }
 
   @media (min-width: @desktop) {
     display: none;
   }
 }
 
-.programs-item__picter-block--background {
+.programs-item__picter-block-item--background {
   @media (min-width: @tablet) {
-    background-image: url("../img/weight-programs-cat.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 268px 200px;
-    width: 270px;
-    height: 200px;
-    margin-top: 14px;
+    position: relative;
+    top: 15px;
   }
+}
 
-  @media (min-width: @desktop) {
-    display: none;
+.programs-item__picter-block-item--background-first {
+  @media (min-width: @tablet) {
+    position: relative;
+    left: 30px;
+    top: 2px;
   }
 }
 

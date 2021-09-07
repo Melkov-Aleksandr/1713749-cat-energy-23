@@ -97,12 +97,14 @@
   justify-content: space-between;
 
   @media (min-width: @tablet) {
-    margin-bottom: 23px;
+    margin-bottom: 19px;
+    margin-top: 4px;
   }
 
   @media (min-width: @desktop) {
     width: 288px;
     margin-bottom: 0;
+    margin-top: 0;
     margin-left: 131px;
   }
 }
@@ -121,13 +123,29 @@
     font-size: 16px;
     line-height: 20px;
 
-    &:first-child {
+    &--style {
       margin-right: 49px;
     }
   }
 
   @media (min-width: @desktop) {
     margin-top: 7px;
+  }
+
+  &--position {
+    @media (min-width: @tablet) {
+      margin-right: 59px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-right: 0;
+    }
+  }
+
+  &--block-position {
+    @media (min-width: @desktop) {
+      margin-right: 10px;
+    }
   }
 }
 //
