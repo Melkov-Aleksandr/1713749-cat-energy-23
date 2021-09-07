@@ -1,6 +1,6 @@
 .gift-block {
   display: flex;
-  background-image: url("../img/gift-background.jpg");
+  background-image: url("../img/gift-background.webp");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-color: @background-green-promo;
@@ -11,8 +11,13 @@
   margin-top: 36px;
   margin-bottom: 37px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-background@2x.webp");
+    background-size: 280px 289px;
+  }
+
   @media (min-width: @tablet) {
-    background-image: url("../img/gift-background-tablet.jpg");
+    background-image: url("../img/gift-background-tablet.webp");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-color: @background-green-promo;
@@ -20,16 +25,26 @@
     height: 200px;
     margin-top: 68px;
     margin-bottom: 75px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-background-tablet@2x.webp");
+      background-size: 708px 200px;
+    }
   }
 
   @media (min-width: @desktop) {
-    background-image: url("../img/gift-background-desctop.jpg");
+    background-image: url("../img/gift-background-desctop.webp");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-color: @background-green-promo;
     width: 245px;
     height: 289px;
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-background-desctop@2x.webp");
+      background-size: 245px 289px;
+    }
   }
 }
 
